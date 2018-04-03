@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { AxiosProvider, Request, Get, Delete, Head, Post, Put, Patch, withAxios } from 'react-axios';
 
 //const url = 'https://patricia.davila.cl/data_clinic/json/supervisora/161988464';
 
@@ -10,14 +11,16 @@ class Supervisora extends Component {
     }
   }
   componentDidMount() {
-    fetch(`http://patricia.davila.cl/data_clinic/json/paciente/161988464`)
+    axios.get(`http://patricia.davila.cl/data_clinic/json/doctor/161988464`)
     .then((response) => {
       response.json();
       console.log(response);
     })
-    .then(data => this.setState({supervisor: data}));
+    .then((data) => {
+      console.log(data);
+      this.setState({supervisor: data})
+    });
   }
-
 
   render() {
     return(
