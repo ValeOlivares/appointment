@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import VistaSupervisor from './components/VistaSupervisor';
+
 import './App.css';
 import ImportDoctor from './data/ImportDoctor';
+import Supervisora from './data/Supervisora'
+
 
 class App extends Component {
   render() {
@@ -9,6 +12,7 @@ class App extends Component {
       <div className="App">
         <VistaSupervisor/>
         <ImportDoctor />
+        <Supervisora />
       </div>
     );
   }

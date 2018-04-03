@@ -1,32 +1,31 @@
 import React, { Component } from 'react';
-import { AxiosProvider, Request, Get, Delete, Head, Post, Put, Patch, withAxios } from 'react-axios';
+
 
 //const url = 'https://patricia.davila.cl/data_clinic/json/supervisora/161988464';
 
-class Supervisora extends Component {
-  constructor() {
-    super();
+
+export default class Supervisora extends Component {
+  constructor(props) {
+    super(props);
     this.state = {
-      supervisor: [],
+      sup : []
     }
   }
+
   componentDidMount() {
-    axios.get(`http://patricia.davila.cl/data_clinic/json/doctor/161988464`)
-    .then((response) => {
-      response.json();
-      console.log(response);
+    fetch(`http://patricia.davila.cl/data_clinic/json/doctor/161988464`)
+    .then(function(response){
+      //console.log(response);
+      return response.json();
     })
-    .then((data) => {
+    .then(function(data) {
       console.log(data);
-      this.setState({supervisor: data})
     });
   }
 
   render() {
     return(
-      <div>hola</div>
+      <div>{this.state.sup}</div>
     )
   }
 }
-
-export default Supervisora;
