@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import VistaSupervisor from './components/VistaSupervisor';
 import './App.css';
 import Supervisora from './data/Supervisora';
 
