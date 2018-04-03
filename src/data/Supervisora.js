@@ -10,7 +10,7 @@ class Supervisora extends Component {
     }
   }
   componentDidMount() {
-    fetch(`https://patricia.davila.cl/data_clinic/json/supervisora/161988464`)
+    fetch(`http://patricia.davila.cl/data_clinic/json/paciente/161988464`)
     .then((response) => {
       response.json();
       console.log(response);
