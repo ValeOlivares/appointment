@@ -93,7 +93,7 @@ class Filtros extends Component {
                     <Button>Box <Glyphicon glyph="menu-down" /></Button>
                   </FormGroup>
                 </Col>
-                <Col xs={12}><Button>Aplicar filtros</Button></Col>
+                <Col xs={12}><Button className="filterBtn">Aplicar filtros</Button></Col>
             </Row>
         )
     }
