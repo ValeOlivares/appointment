@@ -53,12 +53,16 @@ export default class ImportDoctor extends Component {
                     </Col>
                   </Row>
                   <Row>
+                    <Col xs={8}>
+                      <p className="ProfessionalName"> {pat.professional_name} </p>
+                    </Col>
+                  </Row>
+                  <Row>
                     <Col xs={9}>
-                    <p className="ProfessionalName">{pat.professional_name}</p>
-                    <p className="ProfessionalSpecialty">{pat.professional_speciality}</p>
+                      <p className="ProfessionalSpecialty">{pat.professional_speciality}</p>
                     </Col>
                     <Col xs={2}>
-                    <span className="Price">{pat.price}</span>
+                      <p className="Price">{pat.price}</p>
                     </Col>
                   </Row>
                 </div>
