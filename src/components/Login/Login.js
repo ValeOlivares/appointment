@@ -29,7 +29,8 @@ class Login extends Component {
 
     render() {
         return (
-            <Grid className="loginView">  
+            <Grid className="bkgr">
+            <div className="loginView">  
                 <Row className="content">
                     <Col xs={12}  >
                         <Image src={Paty} className="patyImg" responsive />
@@ -46,7 +47,7 @@ class Login extends Component {
                         controlId="formBasicText"
                         validationState={this.getValidationState()}
                     >
-                        <ControlLabel>Please Log in to access this page</ControlLabel>
+                        <ControlLabel className="plsLog">Please log in to access this page</ControlLabel>
                         <FormControl
                             type="mail"
                             value={this.state.value}
@@ -61,12 +62,13 @@ class Login extends Component {
                             onChange={this.handleChange}
                             className="form"
                         />
-                        <Button bsStyle="primary">INICIAR SESIÓN</Button>
+                        <Button className="btnLogIn">INICIAR SESIÓN</Button>
                         <FormControl.Feedback />
-                        <HelpBlock>Registrar</HelpBlock>
-                        <HelpBlock>Olvidaste tu contraseña</HelpBlock>
+                        <HelpBlock className="helper">Registrar</HelpBlock>
+                        <HelpBlock className="helper">¿Olvidaste tu contraseña?</HelpBlock>
                     </FormGroup>
                 </form>
+                </div>
             </Grid>
         );
     }
