@@ -5,8 +5,7 @@ import gestionado from './dataImg/gestionado.png';
 
 //const url = 'https://patricia.davila.cl/data_clinic/json/supervisora/161988464';
 
-
-export default class Supervisora extends Component {
+export default class supervisora extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,8 +13,10 @@ export default class Supervisora extends Component {
     }
   }
 
-  componentWillMount() {
+
+  componentDidMount() {
     fetch(`http://patricia.davila.cl/data_clinic/json/supervisora/161988464`)
+
     .then(function(response){
       //console.log(response);
       return response.json();
