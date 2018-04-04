@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Grid, Row, Col, Image } from 'react-bootstrap';
 import confirmada from './dataImg/confirmada.png';
 import gestionado from './dataImg/gestionado.png';
+import './Supervisora.css';
 
 
 //const url = 'https://patricia.davila.cl/data_clinic/json/supervisora/161988464';
@@ -38,7 +39,7 @@ export default class supervisora extends Component {
                 <div className="allDataCont" key={index}>
                   <Row>
                     <Col xs={8} >
-                      <p> {allData.reserved_date} {allData.reserved_hour} </p>
+                      <p className="dateOfReserve"> {allData.reserved_date} <span className="boldParagraphs">{allData.reserved_hour}</span> </p>
                     </Col>
                     <Col xs={4}>
                       {(allData.state == "confirmada") ? <Image src={confirmada} responsive /> : <Image src={gestionado} responsive />}
