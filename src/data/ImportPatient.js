@@ -31,7 +31,7 @@ export default class ImportDoctor extends Component {
                 <div className="allPatientCont" key={index}>
                   <Row>
                     <Col xs={5} >
-                      <p className="ReservedDate">{pat.reserved_date} <span className="ReservedHour"> {pat.reserved_hour}</span></p>
+                      <p className="ReservedDay">{pat.reserved_date} - <span className="ReservedHour"> {pat.reserved_hour}</span></p>
                     </Col>
                     <Col xs={4}>
                       <p className="PacientType">{pat.type_pacient}</p>
