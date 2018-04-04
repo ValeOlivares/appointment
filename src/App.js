@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import VistaSupervisor from './components/VistaSupervisor';
-import ImportPatient from './data/ImportPatient';
 import './App.css';
 
 
@@ -9,7 +8,6 @@ class App extends Component {
     return (
       <div className="App">
         <VistaSupervisor/>
-        <ImportPatient />
       </div>
     );
   }

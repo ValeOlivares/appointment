@@ -7,6 +7,7 @@ class VistaSupervisor extends Component {
   render() {
     return (
       <div>
+          <Filtros/>
         <VistaFiltrada/>
       </div>
     )

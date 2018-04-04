@@ -4,6 +4,7 @@ import DatosUsuario from './DatosUsuario';
 import PacientesVigentes from './PacientesVigentes';
 import Supervisora from './../../../data/Supervisora';
 import Doctor from './../../../data/Doctor';
+import ImportPatient from './../../../data/ImportPatient';
 
 class VistaFiltrada extends Component {
 	render() {
@@ -14,6 +15,7 @@ class VistaFiltrada extends Component {
         	<PacientesVigentes/>
 				  <Supervisora />
           <Doctor />
+					<ImportPatient />
 				</Grid>
       </div>
     );
