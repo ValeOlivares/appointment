@@ -33,7 +33,10 @@ export default class Supervisora extends Component {
           {this.state.allData.map((allData, index) => {
             return (
               <div className="allDataCont" key={index}>
-                <p> {allData.name_pacient} se atiende en {allData.clinic} </p>
+                <p> {allData.reserved_date} {allData.reserved_hour} <span>{allData.state}</span></p>
+                <p> {allData.atention} <span>{allData.probability}</span></p>
+                <p> <span>{allData.type_pacient}</span>  {allData.name_pacient}</p>
+                <p> {allData.professional_name} </p> 
               </div>
             )
           })}
