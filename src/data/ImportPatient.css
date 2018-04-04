@@ -1,0 +1,23 @@
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+.ReservedDate, .Clinic, .ProfessionalSpecialty{
+  color: #999999;
+}
+
+.ReservedHour, .ProfessionalName, .MenuIcon{
+  color: #5e6871;
+}
+
+.PacientType{
+  color: #4a82c6;
+}
+
+.Probability{
+  color: #e26d6a;
+}
+
+.PatientInfo{
+  border-bottom: 1px solid #999999;
+}
