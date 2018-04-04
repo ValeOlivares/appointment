@@ -1,0 +1,21 @@
+
+.loginView {
+    height: 100vh;
+
+}
+
+.patyImg {
+    width: 50vw;
+    margin: auto;
+}
+
+.logo {
+    margin: auto;
+}
+.form {
+    margin-bottom: 1em;
+}
+
+HelpBlock {
+    color: #5DA3F9;
+}

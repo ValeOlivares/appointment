@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Image, FormGroup, FormControl, ControlLabel, HelpBlock } from 'react-bootstrap'
+import { Image, FormGroup, FormControl, ControlLabel, HelpBlock, Button, Grid, Row, Col} from 'react-bootstrap'
 import Paty from './img/paty.svg';
 import Logo from './img/logo-gmail.png'
+import './login.css'
 
 class Login extends Component {
     constructor(props, context) {
@@ -28,9 +29,18 @@ class Login extends Component {
 
     render() {
         return (
-            <div>
-                <Image src={Paty} responsive />
-                <Image src={Logo} responsive />
+            <Grid className="loginView">  
+                <Row className="content">
+                    <Col xs={12}  >
+                        <Image src={Paty} className="patyImg" responsive />
+                    </Col>
+                </Row>
+                <Row className="content">
+                    <Col xs={12}  >
+                        <Image src={Logo} className="logo" responsive />
+                    </Col>
+                </Row>
+
                 <form>
                     <FormGroup
                         controlId="formBasicText"
@@ -42,19 +52,22 @@ class Login extends Component {
                             value={this.state.value}
                             placeholder="Por favor ingrese su email"
                             onChange={this.handleChange}
+                            className="form"
                         />
                         <FormControl
                             type="password"
                             value={this.state.value}
                             placeholder="Por favor ingrese su contraseña"
                             onChange={this.handleChange}
+                            className="form"
                         />
+                        <Button bsStyle="primary">INICIAR SESIÓN</Button>
                         <FormControl.Feedback />
                         <HelpBlock>Registrar</HelpBlock>
                         <HelpBlock>Olvidaste tu contraseña</HelpBlock>
                     </FormGroup>
                 </form>
-            </div>
+            </Grid>
         );
     }
 }
