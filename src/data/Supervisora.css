@@ -1,24 +1,36 @@
-.hour {
-  font-weight: bolder;
-  color: rgb(153,153,153,1);
-  text-align: left;
-  margin-left: 1em;
-}
-
-.probability {
-  color: rgb(226,109,106,1);
+.Probability {
+  color: #e26d6a;
   font-weight: bold;
 }
 
 .allDataCont {
+  border-bottom: 1px solid #999999;
+  padding-bottom: 1em;
   text-align: left;
-  padding: .5em 1em;
-}
-
-.dateOfReserve {
-  color: rgb(153,153,153,1);
 }
 
 .boldParagraphs {
   font-weight: bold;
+}
+
+.ReservedDay{
+  color: #999999;
+  margin-top: 1em;
+}
+
+.PatientState{
+  margin-top: 1.3em;
+}
+
+.dads {
+display: inline;
+margin: 0.5em;
+text-align: right;
+}
+
+.PacientType{
+  color: #4a82c6;
+  font-weight: bold;
+  font-size: 12.5px;
+  text-align: left;
 }

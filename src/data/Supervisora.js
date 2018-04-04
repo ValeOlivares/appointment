@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Grid, Row, Col, Image } from 'react-bootstrap';
 import confirmada from './dataImg/confirmada.png';
 import gestionado from './dataImg/gestionado.png';
+import dados from './dataImg/dados.png';
 import './Supervisora.css';
 
 
@@ -38,37 +39,40 @@ export default class supervisora extends Component {
             return (
                 <div className="allDataCont" key={index}>
                   <Row>
-                    <Col xs={8} >
-                      <p className="dateOfReserve"> {allData.reserved_date} <span className="boldParagraphs">{allData.reserved_hour}</span> </p>
+                    <Col xs={7} >
+                      <p className="ReservedDay"> {allData.reserved_date} <span className="ReservedHour">{allData.reserved_hour}</span> </p>
                     </Col>
                     <Col xs={4}>
-                      {(allData.state === "confirmada") ? <Image src={confirmada} responsive /> : <Image src={gestionado} responsive />}
+                      <span className="PatientState">{(allData.state === "confirmada")? <Image src={confirmada} className="img-responsive State" /> : <Image src={gestionado} className="img-responsive State"/>}</span>
                     </Col>
                   </Row>
                   <Row>
                     <Col xs={8}>
-                      <p> {allData.atention} </p>
+                      <p className="Clinic">{allData.clinic} / {allData.atention}</p>
                     </Col>
-                    <Col xs={4}>
-                      <p>{allData.probability}</p>
+                    <Col xs={3}>
+                      <span className="probabilityPat">{allData.probability}<span><Image src={dados} responsive className="dads" /></span></span>
+                    </Col>
+                    <Col xs={1} className="col3">
+                      <span className="MenuIcon"><i className="fas fa-ellipsis-v"></i></span>
                     </Col>
                   </Row>
                   <Row>
                     <Col xs={2}>
-                      <p>{allData.type_pacient}</p>
+                      <p className="PacientType">{allData.type_pacient}</p>
                     </Col>
-                    <Col xs={10}>
-                      <p>{allData.name_pacient}</p>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col xs={8}>
-                      <p> {allData.professional_name} </p>
+                    <Col xs={9}>
+                      <p className="PacientName">{allData.name_pacient}</p>
                     </Col>
                   </Row>
                   <Row>
                     <Col xs={8}>
-                      <p>{allData.professional_speciality}</p>
+                      <p className="ProfessionalName"> {allData.professional_name} </p>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col xs={8}>
+                      <p className="ProfessionalSpecialty">{allData.professional_speciality}</p>
                     </Col>
                     <Col xs={4}>
                       <p>{allData.price}</p>
