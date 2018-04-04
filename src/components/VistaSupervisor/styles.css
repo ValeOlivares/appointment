@@ -66,6 +66,10 @@ Button {
     height: 2em;
 }
 
+.lastState {
+    margin-bottom: 1.5em
+}
+
 .btn[disabled]:hover {
     cursor: default;
 }

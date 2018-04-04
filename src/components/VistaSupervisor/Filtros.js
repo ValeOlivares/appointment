@@ -22,7 +22,7 @@ class Filtros extends Component {
                 <Col xs={12} className="appointmentState"><Checkbox>Citas vigentes no confirmadas</Checkbox></Col>
                 <Col xs={12} className="appointmentState"><Checkbox>Citas vigentes confirmadas</Checkbox></Col>
                 <Col xs={12} className="appointmentState"><Checkbox>Citas anuladas por paciente</Checkbox></Col>
-                <Col xs={12} className="appointmentState"><Checkbox>Citas anuladas por profesional</Checkbox></Col>
+                <Col xs={12} className="appointmentState lastState"><Checkbox>Citas anuladas por profesional</Checkbox></Col>
                 <Col xs={12}> <p className="filterTitle">Paciente</p> </Col>
                 <Col xs={12}>
                     <FormGroup>
