@@ -1,0 +1,10 @@
+.hour {
+    font-weight: bolder;
+    color: rgb(153,153,153,1);
+    text-align: left;
+    margin-left: 1em;
+}
+  .probability {
+    color: rgb(226,109,106,1);
+    font-weight: bold;
+  }
