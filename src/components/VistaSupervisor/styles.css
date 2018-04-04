@@ -1,3 +1,7 @@
+p {
+    margin: 0;
+}
+
 .contInfoUser {
     background-color: rgb(74,130,198);
     color: #FFF;
@@ -5,9 +9,6 @@
     padding: .5em 0;
 }
 
-.contInfoUser p {
-    margin: 0;
-}
 
 .userName {
     font-weight: bold;
@@ -17,3 +18,20 @@
     font-size: 1.5em;
     vertical-align: -webkit-baseline-middle
 }
+
+.contDate {
+    background-color: #FFF;
+    padding: 1em 0;
+}
+
+.dateInfo {
+    background-color: #EEEEEE;
+    color: rgb(94,104,113);
+}
+
+.contVigentes {
+    background-color: #D5D7D9;
+    border-bottom: 3px solid rgb(94,104,113);
+    padding: .5em;
+}
+
