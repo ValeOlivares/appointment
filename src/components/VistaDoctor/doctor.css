@@ -1,0 +1,32 @@
+.docDataStyle {
+  border-bottom: 1px solid rgb(153,153,153,1);
+  height: 13vh;
+}
+.docDates,
+.docPatient {
+  margin-top: 1em;
+}
+.hour {
+  font-weight: bolder;
+  color: rgb(153,153,153,1);
+}
+.place {
+  font-style: italic;
+  color: rgb(153,153,153,1);
+  text-align: left;
+}
+.typePat {
+  color: rgb(74,130,198);
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 11px;
+}
+.namePat {
+  font-weight: bolder;
+  color: rgb(94,104,113);
+  text-align: left;
+}
+.probabilityPat {
+  color: rgb(226,109,106,1);
+  font-weight: bold;
+}
