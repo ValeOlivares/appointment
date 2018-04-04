@@ -5,33 +5,36 @@ export default class Doctor extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: [],
+      docData: [],
     }
   }
 
-
   componentDidMount() {
     fetch(`http://patricia.davila.cl/data_clinic/json/doctor/161988464`)
-    .then(response => {
+    .then(function(response) {
       //console.log(response);
       return response.json();
     })
-    .then(data => {
-      console.log(data);
-      let info = data.map((dodo) => {
-        return(
-          <div></div>
-        )
-      });
-      this.setState({data: data.data})
-      console.log("state", this.state.data);
+    .then(response => {
+      const docData = response.data;
+      console.log(docData);
+      this.setState({docData});
     });
   }
 
   render() {
-    const {doc} = this.state;
     return(
-      <div>{this.state.doc}</div>
+      <section>
+        <div>
+          {this.state.docData.map((docData, ind) =>{
+            return(
+              <div className="alldata" key="ind">
+                <p>{docData.name_pacient} hola {docData.clinic}</p>
+              </div>
+            )
+          })}
+        </div>
+      </section>
     )
   }
 }
