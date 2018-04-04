@@ -28,7 +28,7 @@ export default class Doctor extends Component {
       <div>
       {this.state.docData.map((docData, index) => {
         return (
-        <Grid>
+        <Grid fluid>
           <Row key={index} className="show-grid">
             <Col xs={4}>{docData.reserved_hour}</Col>
             <Col xs={4}>{docData.clinic}</Col>
