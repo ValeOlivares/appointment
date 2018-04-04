@@ -47,10 +47,10 @@ export default class supervisora extends Component {
                     </Col>
                   </Row>
                   <Row>
-                    <Col xs={8}>
+                    <Col xs={9}>
                       <p className="Clinic">{allData.clinic} / {allData.atention}</p>
                     </Col>
-                    <Col xs={3}>
+                    <Col xs={2}>
                       <span className="probabilityPat">{allData.probability}<span><Image src={dados} responsive className="dads" /></span></span>
                     </Col>
                     <Col xs={1} className="col3">
@@ -58,8 +58,8 @@ export default class supervisora extends Component {
                     </Col>
                   </Row>
                   <Row>
-                    <Col xs={2}>
-                      <p className="PacientType">{allData.type_pacient}</p>
+                    <Col xs={1}>
+                      <p className="PacientType2">{allData.type_pacient}</p>
                     </Col>
                     <Col xs={9}>
                       <p className="PacientName">{allData.name_pacient}</p>
@@ -71,11 +71,11 @@ export default class supervisora extends Component {
                     </Col>
                   </Row>
                   <Row>
-                    <Col xs={8}>
+                    <Col xs={9}>
                       <p className="ProfessionalSpecialty">{allData.professional_speciality}</p>
                     </Col>
-                    <Col xs={4}>
-                      <p>{allData.price}</p>
+                    <Col xs={2}>
+                      <p className="Prices">{allData.price}</p>
                     </Col>
                   </Row>
                 </div>
