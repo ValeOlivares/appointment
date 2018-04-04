@@ -1,0 +1,19 @@
+.contInfoUser {
+    background-color: rgb(74,130,198);
+    color: #FFF;
+    text-align: left;
+    padding: .5em 0;
+}
+
+.contInfoUser p {
+    margin: 0;
+}
+
+.userName {
+    font-weight: bold;
+}
+
+.verticalOptions {
+    font-size: 1.5em;
+    vertical-align: -webkit-baseline-middle
+}
