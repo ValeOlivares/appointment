@@ -63,7 +63,7 @@ Button {
 .appointmentState {
     text-align: left;
     padding-left: 3em;
-    height: 2em;
+    height: 1em;
 }
 
 .lastState {
@@ -81,6 +81,18 @@ input.form-control:focus {
 .filterBtn {
     border: 2px solid rgb(74,130,198);
     color: rgb(74,130,198);
-    margin-bottom: 1em;
+    margin-bottom: .2em;
 }
 
+.vistaFiltros {
+    min-height: 100vh;
+    padding: 0.5em 0;
+}
+
+.checkbox {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: .3em;
+}
