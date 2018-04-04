@@ -12,7 +12,7 @@ export default class ImportDoctor extends Component {
     }
   }
   componentWillMount() {
-    fetch(`http://patricia.davila.cl/data_clinic/json/paciente/161988464`)
+    fetch(`https://patricia.davila.cl/data_clinic/json/paciente/161988464`)
     .then(function(response){
       //console.log(response);
       return response.json();

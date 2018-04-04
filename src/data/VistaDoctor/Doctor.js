@@ -16,7 +16,7 @@ export default class Doctor extends Component {
   }
 
   componentDidMount() {
-    fetch(`http://patricia.davila.cl/data_clinic/json/doctor/161988464`)
+    fetch(`https://patricia.davila.cl/data_clinic/json/doctor/161988464`)
     .then(function(response) {
       //console.log(response);
       return response.json();

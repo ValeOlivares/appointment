@@ -18,7 +18,7 @@ export default class supervisora extends Component {
 
 
   componentDidMount() {
-    fetch(`http://patricia.davila.cl/data_clinic/json/supervisora/161988464`)
+    fetch(`https://patricia.davila.cl/data_clinic/json/supervisora/161988464`)
 
       .then(function (response) {
         //console.log(response);
