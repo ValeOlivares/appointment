@@ -16,7 +16,8 @@
   font-weight: bolder;
   color: rgb(153,153,153,1);
   font-size: 13px;
-  padding-top: 0.1em;
+  padding-top: 1em;
+  text-align: left;
 
 }
 .place {
@@ -24,7 +25,6 @@
   color: rgb(153,153,153,1);
   text-align: left;
 }
-
 
 .stateImg {
   margin-left: -1em;
@@ -52,6 +52,7 @@
   width: 1.2em;
   margin-left: 0.3em;
 }
-.col3 {
-  padding: 0;
+
+.place{
+  margin-top: 1em;
 }

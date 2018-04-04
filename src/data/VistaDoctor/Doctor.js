@@ -35,24 +35,24 @@ export default class Doctor extends Component {
         return (
         <div className="docDataStyle">
           <Row key={index} className="show-grid docDates">
-            <Col xs={2}>
+            <Col xs={1}>
               <p className="hour">{docData.reserved_hour}</p>
             </Col>
-            <Col xs={7}>
+            <Col xs={6}>
               <p className="place">{docData.clinic}</p>
             </Col>
-            <Col xs={3} className="col3">
-              {(docData.state === "confirmada") ? <Image className="stateImg" src={confirmada} responsive /> : <Image className="stateImg" src={gestionado} responsive />}
+            <Col xs={4} className="show-grid">
+              <span className="PatientState">{(docData.state === "confirmada")? <Image src={confirmada} className="img-responsive State" /> : <Image src={gestionado} className="img-responsive State"/>}</span>
             </Col>
           </Row>
           <Row className="show-grid docPatient">
-            <Col xs={2}>
+            <Col xs={1}>
               <p className="typePat">{docData.type_pacient}</p>
             </Col>
-            <Col xs={7}>
+            <Col xs={8}>
               <p className="namePat">{docData.name_pacient}</p>
             </Col>
-            <Col xs={3} className="col3">
+            <Col xs={2} className="col3">
               <span className="probabilityPat">{docData.probability}<span><Image src={dados} responsive className="dads" /></span></span>
             </Col>
           </Row>
