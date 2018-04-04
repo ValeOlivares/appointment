@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import DatosUsuario from './DatosUsuario';
 import PacientesVigentes from './PacientesVigentes';
-import PlantillaDatos from './PlantillaDatos';
+import Supervisora from './../../../data/Supervisora';
 
 class VistaFiltrada extends Component {
 	render() {
@@ -9,7 +9,7 @@ class VistaFiltrada extends Component {
       <div>
         <DatosUsuario/>
         <PacientesVigentes/>
-        <PlantillaDatos/>
+				<Supervisora />
       </div>
     );
   }
