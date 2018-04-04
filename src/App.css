@@ -27,6 +27,7 @@
   to { transform: rotate(360deg); }
 }
 
-.allDataCont {
-  outline: red 1px solid;
+.container{
+  padding-right: 0;
+  padding-left: 0;
 }
