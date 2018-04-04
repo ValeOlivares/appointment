@@ -4,6 +4,7 @@ import confirmada from './dataImg/confirmada.png';
 import gestionado from './dataImg/gestionado.png';
 import dados from './dataImg/dados.png';
 import './ImportPatient.css'
+
 export default class ImportDoctor extends Component {
   constructor(props) {
     super(props);
