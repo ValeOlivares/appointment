@@ -2,11 +2,11 @@ body{
   font-family: 'Lato', sans-serif;
 }
 
-.ReservedDate, .Clinic, .ProfessionalSpecialty{
+.ReservedDate, .Clinic, .ReservedHour, .ProfessionalSpecialty .ReservedDay{
   color: #999999;
 }
 
-.ReservedHour, .ProfessionalName, .MenuIcon{
+.ProfessionalName, .MenuIcon{
   color: #5e6871;
 }
 
@@ -32,4 +32,16 @@ margin: 10px;
 }
 .Clinic {
 	font-size: 15px;
+  float: left;
+}
+
+.ReservedDay{
+  float: left;
+  color: #999999;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.ReservedHour{
+  font-weight: bold;
 }
