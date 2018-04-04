@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Grid, Row, Col, Clearfix } from 'react-bootstrap';
 import DatosUsuario from './DatosUsuario';
 import PacientesVigentes from './PacientesVigentes';
 import Supervisora from './../../../data/Supervisora';
@@ -8,10 +9,12 @@ class VistaFiltrada extends Component {
 	render() {
     return (
       <div>
-        <DatosUsuario/>
-        <PacientesVigentes/>
-				<Supervisora />
-        <Doctor />
+				<Grid>
+					<DatosUsuario/>
+        	<PacientesVigentes/>
+				  <Supervisora />
+          <Doctor />
+				</Grid>
       </div>
     );
   }
