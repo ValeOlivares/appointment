@@ -29,7 +29,8 @@ export default class Doctor extends Component {
           {this.state.docData.map((docData, ind) =>{
             return(
               <div className="alldata" key="ind">
-                <p>{docData.name_pacient} hola {docData.clinic}</p>
+                <p>{docData.reserved_hour}<span></span> {docData.clinic}<span> {docData.state}</span></p>
+                <p>{docData.type_pacient}<span> {docData.name_pacient}</span><span> {docData.probability}</span></p>
               </div>
             )
           })}
