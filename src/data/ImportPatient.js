@@ -28,7 +28,7 @@ export default class ImportDoctor extends Component {
         <Row>
           {this.state.pat.map((pat, index) => {
             return (
-                <div className="allDataCont" key={index}>
+                <div className="allPatientCont" key={index}>
                   <Row>
                     <Col xs={5} >
                       <p className="ReservedDate">{pat.reserved_date} <span className="ReservedHour"> {pat.reserved_hour}</span></p>
