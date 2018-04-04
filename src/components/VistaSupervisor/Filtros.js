@@ -4,7 +4,7 @@ import { Row, Col, FormGroup, Glyphicon, FormControl, Button, Checkbox, InputGro
 class Filtros extends Component {
     render() {
         return (
-            <Row>
+            <Row className="vistaFiltros">
                 <Col xs={12}> <p className="filterTitle">Fecha cita</p> </Col>
                 <Col xs={5} xsOffset={1}>
                   <FormGroup>
