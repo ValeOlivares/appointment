@@ -2,7 +2,7 @@ body{
   font-family: 'Lato', sans-serif;
 }
 
-.ReservedDate, .Clinic, .ReservedHour, .ProfessionalSpecialty .ReservedDay{
+.ReservedDate, .Clinic, .ReservedHour, .ProfessionalSpecialty, .ReservedDay, .Price{
   color: #999999;
 }
 
@@ -12,6 +12,10 @@ body{
 
 .PacientType{
   color: #4a82c6;
+  margin-top: 1.3em;
+  font-weight: bold;
+  font-size: 12.5px;
+  text-align: left;
 }
 
 .Probability{
@@ -20,28 +24,55 @@ body{
 
 .allPatientCont{
   border-bottom: 1px solid #999999;
+  padding-bottom: 1em;
 
 }
+
 .dads {
 display: inline;
 margin: 0.5em;
 }
+
 .ProfessionalName, .ProfessionalSpecialty{
 text-align: left;
-margin: 10px;
 }
+
+.ProfessionalName{
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.ProfessionalSpecialty{
+  text-transform: capitalize;
+  font-style: italic;
+}
+
 .Clinic {
 	font-size: 15px;
-  float: left;
+  text-align: left;
 }
 
 .ReservedDay{
   float: left;
   color: #999999;
   margin-top: 1em;
-  margin-bottom: 1em;
 }
 
 .ReservedHour{
   font-weight: bold;
+}
+
+.img-responsive{
+  margin-top: 0.9em;
+}
+
+.MenuIcon{
+  text-align: center;
+  font-size: 20px;
+  color: #999999;
+  margin-right: 1em;
+}
+
+.Price{
+  margin-top: 1em;
 }

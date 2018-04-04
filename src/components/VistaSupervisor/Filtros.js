@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import {Grid, Row, Col, FormGroup, Glyphicon, FormControl, Button, Checkbox, InputGroup} from 'react-bootstrap';
-import ImportPatient from './../../data/ImportPatient';
+import { Row, Col, FormGroup, Glyphicon, FormControl, Button, Checkbox, InputGroup} from 'react-bootstrap';
 
 class Filtros extends Component {
     render() {

@@ -30,31 +30,35 @@ export default class ImportDoctor extends Component {
             return (
                 <div className="allPatientCont" key={index}>
                   <Row>
-                    <Col xs={5} >
+                    <Col xs={4} >
                       <p className="ReservedDay">{pat.reserved_date} - <span className="ReservedHour"> {pat.reserved_hour}</span></p>
                     </Col>
-                    <Col xs={4}>
+                    <Col xs={3}>
                       <p className="PacientType">{pat.type_pacient}</p>
                     </Col>
                     <p className="show-grid"></p>
-                    <Col xs={3}>
-                      <span>{(pat.state == "confirmada")? <Image src={confirmada} responsive /> : <Image src={gestionado} responsive/>}</span>
+                    <Col xs={4}>
+                      <span className="PatientState">{(pat.state === "confirmada")? <Image src={confirmada} className="img-responsive State" /> : <Image src={gestionado} className="img-responsive State"/>}</span>
                     </Col>
                   </Row>
                   <Row>
-                   <Col xs={8}>
+                   <Col xs={9}>
                       <p className="Clinic">{pat.clinic} / {pat.atention}</p>
                     </Col>
-                    <Col xs={4} className="col3">
+                    <Col xs={2} className="col3">
                       <span className="probabilityPat">{pat.probability}<span><Image src={dados} responsive className="dads" /></span></span>
+                    </Col>
+                    <Col xs={1} className="col3">
+                      <span className="MenuIcon"><i className="fas fa-ellipsis-v"></i></span>
                     </Col>
                   </Row>
                   <Row>
-                    <Col xs={10}>
+                    <Col xs={9}>
                     <p className="ProfessionalName">{pat.professional_name}</p>
                     <p className="ProfessionalSpecialty">{pat.professional_speciality}</p>
                     </Col>
                     <Col xs={2}>
+                    <span className="Price">{pat.price}</span>
                     </Col>
                   </Row>
                 </div>
