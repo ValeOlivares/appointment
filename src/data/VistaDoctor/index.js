@@ -1,4 +1,4 @@
-import React , { Component } from 'react';
+import React, { Component } from 'react';
 import Doctor from './Doctor';
 import DatosUsuario from './../../components/VistaSupervisor/VistaFiltrada/DatosUsuario';
 import PacientesVigentes from './../../components/VistaSupervisor/VistaFiltrada/PacientesVigentes';

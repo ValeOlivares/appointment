@@ -3,7 +3,7 @@ import { Grid } from 'react-bootstrap';
 import DatosUsuario from './DatosUsuario';
 import PacientesVigentes from './PacientesVigentes';
 import Supervisora from './../../../data/Supervisora';
-import Doctor from './../../../data/Doctor';
+import Doctor from './../../../data/VistaDoctor';
 import ImportPatient from './../../../data/ImportPatient';
 
 class VistaFiltrada extends Component {
