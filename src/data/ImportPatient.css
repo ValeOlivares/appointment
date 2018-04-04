@@ -21,3 +21,14 @@ body{
 .PatientInfo{
   border-bottom: 1px solid #999999;
 }
+.dads {
+display: inline;
+margin: 0.5em;
+}
+.ProfessionalName, .ProfessionalSpecialty{
+text-align: left;
+margin: 10px;
+}
+.Clinic {
+	font-size: 15px;
+}

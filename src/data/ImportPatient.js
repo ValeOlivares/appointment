@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Grid, Row, Col, Image } from 'react-bootstrap';
 import confirmada from './dataImg/confirmada.png';
 import gestionado from './dataImg/gestionado.png';
+import dados from './dataImg/dados.png';
 import './ImportPatient.css'
 
 export default class ImportDoctor extends Component {
@@ -34,32 +35,31 @@ export default class ImportDoctor extends Component {
               <Grid>
                 <div className="allDataCont" key={index}>
                   <Row className="show-grid">
-                    <Col xs={8} >
-                      <p className="ReservedDate">{pat.reserved_date}</p> <p className="ReservedHour">{pat.reserved_hour}</p>
+                    <Col xs={5} >
+                      <p className="ReservedDate">{pat.reserved_date} <span className="ReservedHour"> {pat.reserved_hour}</span></p>
                     </Col>
                     <Col xs={4}>
                       <p className="PacientType">{pat.type_pacient}</p>
                     </Col>
-                  </Row>
-                  <Row className="show-grid">
-                    <Col xs={8}>
-                      <p className="State">{pat.state}</p> <span>{(pat.state == "confirmada")? <img src={confirmada}/> :  <img src={gestionado}/> }</span>
+                    <p className="show-grid"></p>
+                    <Col xs={3}>
+                      <span>{(pat.state == "confirmada")? <Image src={confirmada} responsive /> : <Image src={gestionado} responsive/>}</span>
                     </Col>
-                    <Col xs={4}>
+                  </Row>
+                  <Row className="show-6grid">
+                   <Col xs={8}>
                       <p className="Clinic">{pat.clinic} / {pat.atention}</p>
                     </Col>
+                    <Col xs={4} className="col3">
+                      <span className="probabilityPat">{pat.probability}<span><Image src={dados} responsive className="dads" /></span></span>
+                    </Col>
                   </Row>
                   <Row className="show-grid">
-                    <Col xs={2}>
-                      <p className="Probability">{pat.probability}</p>
-                    </Col>
                     <Col xs={10}>
-                      <p className="ProfessionalName">{pat.professional_name}</p>
+                    <p className="ProfessionalName">{pat.professional_name}</p>
+                    <p className="ProfessionalSpecialty">{pat.professional_speciality}</p>
                     </Col>
-                  </Row>
-                  <Row className="show-grid">
-                    <Col xs={8}>
-                      <p className="ProfessionalSpecialty">{pat.professional_specialty}</p>
+                    <Col xs={2}>
                     </Col>
                   </Row>
                 </div>
@@ -71,9 +71,9 @@ export default class ImportDoctor extends Component {
     )
   }
 }
+/*
 
-
-/*<div className="PatientInfo" key={index}>
+<div className="PatientInfo" key={index}>
 <p className="ReservedDate">{pat.reserved_date}</p>
 <p className="ReservedHour">{pat.reserved_hour}</p>
 <p className="PacientType">{pat.type_pacient}</p>
