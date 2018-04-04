@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import VistaSupervisor from './components/VistaSupervisor';
-import ImportPatient from './data/ImportPatient'
-import Doctor from './data/Doctor';
+import ImportPatient from './data/ImportPatient';
 import './App.css';
 
 
