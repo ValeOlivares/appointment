@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Grid, Row, Col } from 'react-bootstrap';
 
 
 export default class Doctor extends Component {
@@ -24,18 +25,24 @@ export default class Doctor extends Component {
 
   render() {
     return(
-      <section>
-        <div>
-          {this.state.docData.map((docData, ind) =>{
-            return(
-              <div className="alldata" key="ind">
-                <p>{docData.reserved_hour}<span></span> {docData.clinic}<span> {docData.state}</span></p>
-                <p>{docData.type_pacient}<span> {docData.name_pacient}</span><span> {docData.probability}</span></p>
-              </div>
-            )
-          })}
-        </div>
-      </section>
+      <div>
+      {this.state.docData.map((docData, index) => {
+        return (
+        <Grid>
+          <Row key={index} className="show-grid">
+            <Col xs={4}>{docData.reserved_hour}</Col>
+            <Col xs={4}>{docData.clinic}</Col>
+            <Col xs={4}>{docData.state}</Col>
+          </Row>
+          <Row className="show-grid">
+            <Col xs={4}>{docData.type_pacient}</Col>
+            <Col xs={4}>{docData.name_pacient}</Col>
+            <Col xs={4}>{docData.probability}</Col>
+          </Row>
+        </Grid>
+        )
+      })}
+      </div>
     )
   }
 }
