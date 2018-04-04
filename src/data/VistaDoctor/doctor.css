@@ -3,15 +3,7 @@
   height: 13vh;
 
 }
-.docDates,
-.docPatient {
-  margin-top: 1em;
 
-  padding: 0;
-}
-.docDates {
-  margin-top: 0.6em;
-}
 .hour {
   font-weight: bolder;
   color: rgb(153,153,153,1);

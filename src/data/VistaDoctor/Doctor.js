@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
-import dados from './dataImg/dados.png';
-import confirmada from './dataImg/confirmada.png';
-import gestionado from './dataImg/gestionado.png';
-import './../components/VistaDoctor/doctor.css';
+import dados from './../dataImg/dados.png';
+import confirmada from './../dataImg/confirmada.png';
+import gestionado from './../dataImg/gestionado.png';
+import './doctor.css';
+import './../../App.css';
 
 
 export default class Doctor extends Component {
