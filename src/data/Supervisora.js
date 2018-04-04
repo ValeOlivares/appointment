@@ -42,7 +42,7 @@ export default class supervisora extends Component {
                       <p className="dateOfReserve"> {allData.reserved_date} <span className="boldParagraphs">{allData.reserved_hour}</span> </p>
                     </Col>
                     <Col xs={4}>
-                      {(allData.state == "confirmada") ? <Image src={confirmada} responsive /> : <Image src={gestionado} responsive />}
+                      {(allData.state === "confirmada") ? <Image src={confirmada} responsive /> : <Image src={gestionado} responsive />}
                     </Col>
                   </Row>
                   <Row>

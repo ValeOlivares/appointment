@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col, Clearfix } from 'react-bootstrap';
+import { Grid } from 'react-bootstrap';
 import DatosUsuario from './DatosUsuario';
 import PacientesVigentes from './PacientesVigentes';
 import Supervisora from './../../../data/Supervisora';
