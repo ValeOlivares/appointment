@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Grid, Row, Col} from 'react-bootstrap';
 import Filtros from './Filtros';
 import VistaFiltrada from './VistaFiltrada';
 import './styles.css';
@@ -7,8 +8,10 @@ class VistaSupervisor extends Component {
   render() {
     return (
       <div>
-          <Filtros/>
-        <VistaFiltrada/>
+          <Grid>
+            <Filtros/>
+            <VistaFiltrada/>
+          </Grid>
       </div>
     )
   }
