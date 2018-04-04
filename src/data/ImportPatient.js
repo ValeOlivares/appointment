@@ -29,7 +29,14 @@ export default class ImportDoctor extends Component {
           {this.state.pat.map((pat, index) => {
             return (
               <div className="allDataCont" key={index}>
-                <p>Pepito se atendió con {pat.professional_name} en {pat.clinic}</p>
+                <p>{pat.reserved_date}</p>
+                <p>{pat.reserved_hour}</p>
+                <p>{pat.type_pacient}</p>
+                <p>{pat.state}</p>
+                <p>{pat.clinic} / {pat.atention}</p>
+                <p>{pat.probability}</p>
+                <p>{pat.professional_name}</p>
+                <p>{pat.professional_specialty}</p>
               </div>
             )
           })}
