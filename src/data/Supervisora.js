@@ -32,13 +32,11 @@ export default class supervisora extends Component {
 
   render() {
     return (
-      <section>
-        <div>
+      <Row>
           {this.state.allData.map((allData, index) => {
             return (
-              <Grid>
                 <div className="allDataCont" key={index}>
-                  <Row className="show-grid">
+                  <Row>
                     <Col xs={8} >
                       <p> {allData.reserved_date} {allData.reserved_hour} </p>
                     </Col>
@@ -46,7 +44,7 @@ export default class supervisora extends Component {
                       {(allData.state == "confirmada") ? <Image src={confirmada} responsive /> : <Image src={gestionado} responsive />}
                     </Col>
                   </Row>
-                  <Row className="show-grid">
+                  <Row>
                     <Col xs={8}>
                       <p> {allData.atention} </p>
                     </Col>
@@ -54,7 +52,7 @@ export default class supervisora extends Component {
                       <p>{allData.probability}</p>
                     </Col>
                   </Row>
-                  <Row className="show-grid">
+                  <Row>
                     <Col xs={2}>
                       <p>{allData.type_pacient}</p>
                     </Col>
@@ -62,12 +60,12 @@ export default class supervisora extends Component {
                       <p>{allData.name_pacient}</p>
                     </Col>
                   </Row>
-                  <Row className="show-grid">
+                  <Row>
                     <Col xs={8}>
                       <p> {allData.professional_name} </p>
                     </Col>
                   </Row>
-                  <Row className="show-grid">
+                  <Row>
                     <Col xs={8}>
                       <p>{allData.professional_speciality}</p>
                     </Col>
@@ -76,11 +74,9 @@ export default class supervisora extends Component {
                     </Col>
                   </Row>
                 </div>
-              </Grid>
             )
           })}
-        </div>
-      </section>
+      </Row>
     )
   }
 }
