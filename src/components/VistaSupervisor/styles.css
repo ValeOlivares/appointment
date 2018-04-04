@@ -1,4 +1,5 @@
 
+
 p {
     margin: 0;
 }
@@ -11,9 +12,13 @@ p {
 }
 
 
+
+
+
 .contInfoUser p {
     margin: 0;
 }
+
 
 
 .userName {
@@ -23,6 +28,9 @@ p {
 .verticalOptions {
     font-size: 1.5em;
     vertical-align: -webkit-baseline-middle
+
+}
+
 
 }
 

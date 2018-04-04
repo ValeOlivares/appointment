@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
+
+import { Grid, Row, Col } from 'react-bootstrap';
+
 import { Grid, Row, Col, Image } from 'react-bootstrap';
 import dados from './dataImg/dados.png';
 import confirmada from './dataImg/confirmada.png';
 import gestionado from './dataImg/gestionado.png';
+
 import './../components/VistaDoctor/doctor.css';
 
 
@@ -32,6 +36,18 @@ export default class Doctor extends Component {
       <Row>
       {this.state.docData.map((docData, index) => {
         return (
+
+        <Grid className="docDataStyle" fluid>
+          <Row key={index} className="show-grid docDates">
+            <Col xs={2} className="hour">{docData.reserved_hour}</Col>
+            <Col xs={7} className="place">{docData.clinic}</Col>
+            <Col xs={3}>{docData.state}</Col>
+          </Row>
+          <Row className="show-grid docPatient">
+            <Col xs={2} className="typePat">{docData.type_pacient}</Col>
+            <Col xs={7} className="namePat">{docData.name_pacient}</Col>
+            <Col xs={3} className="probabilityPat">{docData.probability}</Col>
+
         <div className="docDataStyle">
           <Row key={index} className="show-grid docDates">
             <Col xs={2}>
@@ -54,6 +70,7 @@ export default class Doctor extends Component {
             <Col xs={3} className="col3">
               <span className="probabilityPat">{docData.probability}<span><Image src={dados} responsive className="dads" /></span></span>
             </Col>
+
           </Row>
         </div>
         )

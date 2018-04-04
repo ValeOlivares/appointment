@@ -1,6 +1,12 @@
 .docDataStyle {
   border-bottom: 1px solid rgb(153,153,153,1);
   height: 13vh;
+
+}
+.docDates,
+.docPatient {
+  margin-top: 1em;
+
   padding: 0;
 }
 .docDates {
@@ -8,21 +14,28 @@
 }
 .docPatient {
   
+
 }
 .hour {
   font-weight: bolder;
   color: rgb(153,153,153,1);
+ master
+
   font-size: 13px;
   padding-top: 0.1em;
+
 }
 .place {
   font-style: italic;
   color: rgb(153,153,153,1);
   text-align: left;
 }
+
+
 .stateImg {
   margin-left: -1em;
 }
+
 .typePat {
   color: rgb(74,130,198);
   font-weight: bolder;
@@ -37,6 +50,7 @@
 .probabilityPat {
   color: rgb(226,109,106,1);
   font-weight: bold;
+
   text-align: justify;
 }
 .dads {

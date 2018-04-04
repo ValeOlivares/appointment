@@ -7,7 +7,9 @@ class DatosUsuario extends Component {
         return (
 
 
+
             <div>
+
 
             <Row className="contInfoUser">
                 <Col xs={10}>
@@ -18,6 +20,7 @@ class DatosUsuario extends Component {
                     <Glyphicon glyph="option-vertical" className="verticalOptions"/>
                 </Col>
             </Row>
+
 
             <Row className="contDate">
             <Col xs={4}><p className="dateInfo">Dr. Jorquera</p></Col>
