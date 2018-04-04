@@ -7,12 +7,12 @@ class Filtros extends Component {
         return (
             <Row>
                 <Col xs={12}> <p className="filterTitle">Fecha cita</p> </Col>
-                <Col xs={5} xsOffset={1}> 
+                <Col xs={5} xsOffset={1}>
                   <FormGroup>
                     <Button>Desde <Glyphicon glyph="menu-down" /></Button>
                   </FormGroup>
                 </Col>
-                <Col xs={5}> 
+                <Col xs={5}>
                   <FormGroup>
                     <Button>Hasta <Glyphicon glyph="menu-down" /></Button>
                   </FormGroup>

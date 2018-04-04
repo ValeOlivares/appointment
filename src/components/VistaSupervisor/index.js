@@ -8,7 +8,7 @@ class VistaSupervisor extends Component {
   render() {
     return (
       <div>
-          <Grid className="vistaAllSuper">
+          <Grid>
             <Filtros/>
             <VistaFiltrada/>
           </Grid>
