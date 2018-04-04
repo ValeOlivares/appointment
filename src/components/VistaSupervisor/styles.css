@@ -53,5 +53,15 @@ p {
 Button {
     width: 100%;
 }
+.filterTitle {
+    color: rgb(94,104,113);
+    font-weight: bold;
+    text-align: left;
+}
+
+.appointmentState {
+    text-align: left;
+    padding-left: 3em;
+}
 
 

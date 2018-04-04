@@ -6,7 +6,7 @@ class Filtros extends Component {
     render() {
         return (
             <Row>
-                <Col xs={12}> <p>Fecha cita</p> </Col>
+                <Col xs={12}> <p className="filterTitle">Fecha cita</p> </Col>
                 <Col xs={5} xsOffset={1}> 
                   <FormGroup>
                     <Button>Desde <Glyphicon glyph="menu-down" /></Button>
@@ -17,10 +17,13 @@ class Filtros extends Component {
                     <Button>Hasta <Glyphicon glyph="menu-down" /></Button>
                   </FormGroup>
                 </Col>
-                <Col xs={12}> <p>Estado</p> </Col>
-                <Col xs={12}> <Checkbox>Remember me</Checkbox> </Col>
-                <Checkbox>Remember me</Checkbox>
-                <Checkbox>Remember me</Checkbox>
+                <Col xs={12}> <p className="filterTitle">Estado</p> </Col>
+                <Col xs={12} className="appointmentState"><Checkbox>Citas vigentes (todas)</Checkbox></Col>
+                <Col xs={12} className="appointmentState"><Checkbox>Citas vigentes no confirmadas</Checkbox></Col>
+                <Col xs={12} className="appointmentState"><Checkbox>Citas vigentes confirmadas</Checkbox></Col>
+                <Col xs={12} className="appointmentState"><Checkbox>Citas anuladas por paciente</Checkbox></Col>
+                <Col xs={12} className="appointmentState"><Checkbox>Citas anuladas por profesional</Checkbox></Col>
+                <Col xs={12}> <p className="filterTitle">Paciente</p> </Col>
             </Row>
         )
     }
