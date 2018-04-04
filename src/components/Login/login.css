@@ -1,7 +1,9 @@
 
 .loginView {
-    height: 100vh;
-
+  background-color: #FFF;
+  margin: 10em 2.5em;
+  padding: 1em;
+  border-radius: .6em;
 }
 
 .patyImg {
@@ -16,6 +18,25 @@
     margin-bottom: 1em;
 }
 
-HelpBlock {
-    color: #5DA3F9;
+.bkgr {
+    height: 100vh;
+    background-color: #CFD0CF;
+}
+
+.content {
+    margin-top: -10em !important;
+}
+
+.btnLogIn {
+    background-color: #479ED7;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.helper {
+    color: #479ED7;
+}
+
+.plsLog {
+    color: #4a82c6;
 }
